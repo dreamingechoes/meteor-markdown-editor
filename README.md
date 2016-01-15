@@ -4,7 +4,7 @@ Meteor Markdown Editor
 About
 -----
 
-**Meteor Markdown Editor** it's a very light and simple online markdown editor made with [Meteor](http://meteor.com/). If you like it, please share with your friends, start it, fork it, change it... whatever you want! You could check it on [meteor-markdown-editor.meteor.com](http://meteor-markdown-editor.meteor.com/).
+**Meteor Markdown Editor** it's a very light and simple online markdown editor made with [Meteor](http://meteor.com/). If you like it, please share with your friends, start it, fork it, change it... whatever you want! You could check it at [meteor-markdown-editor.meteor.com](http://meteor-markdown-editor.meteor.com/).
 
 Bootstrap theme made by [designmodo.github.io](http://designmodo.github.io/Flat-UI/)
 
