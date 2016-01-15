@@ -1,0 +1,55 @@
+/* CSS declarations go here */
+a {
+  border-radius: 0;
+}
+body {
+  padding-top: 50px;
+}
+.dropdown-menu .glyphicon {
+  margin-right: 6px;
+}
+.markdown-textarea {
+  border-right: solid 1px #ccc;
+  margin: 0;
+}
+.markdown-textarea,
+.markdown-panel {
+  margin: 0;
+  float: left;
+  width: 45%;
+  min-height: 572px;
+  padding: 12px 24px;
+}
+.markdown {
+  min-height: 572px;
+  width: 100%;
+}
+.meteor-logo {
+  width: 100%;
+  text-align: center;
+}
+.meteor-logo img {
+  width: 60%;
+}
+.footer-banner {
+  padding-top: 22px;
+  text-align: center;
+}
+.footer-logo {
+  padding: 0;
+  margin: 12px 0 0 0;
+  text-align: center;
+}
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  width: 100%;
+  min-height: 572px;
+}

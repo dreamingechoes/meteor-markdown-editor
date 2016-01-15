@@ -1,0 +1,122 @@
+<head>
+  <title>Meteor Markdown Editor</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Meteor Markdown Online Editor made with Meteor by @dreamingechoes">
+  <meta name="keywords" content="markdown,editor,online,meteor,development">
+  <meta name="author" content="dreamingechoes">
+
+  <meta property="og:title" content="Meteor Markdown Editor" />
+  <meta property="og:description" content="Meteor Markdown Online Editor made with Meteor by @dreamingechoes" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="http://dreamingecho.es/meteor-markdown-editor" />
+  <meta property="og:image" content="images/meteor.png" />
+
+  <link rel="stylesheet" href="css/flat-ui.min.css" media="screen" charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="container-full">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-embossed">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> <a class="navbar-brand" href="#">Meteor Markdown Editor</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              OPTIONS <b class="caret"></b>
+            </a>
+              <span class="dropdown-arrow"></span>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-list-alt"></span> New Document</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-floppy-save"></span> Save Document</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    {{> markdown}}
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-7">
+          <h3 class="footer-title">Give some love!</h3>
+          <p>
+            <b>Meteor Markdown Editor</b> it's a very light and simple online markdown editor made with <a href="http://meteor.com/" target="_blank">Meteor</a>. If you like it, please share with your friends, start it, fork it, change it... whatever you
+            want! :)
+          </p>
+          <p>
+            Bootstrap theme made by <a href="http://designmodo.github.io/Flat-UI/" target="_blank">designmodo.github.io</a>
+          </p>
+
+          <p class="pvl">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="dreamingechoes" data-hashtags="meteor">Tweet</a>
+            <script>
+              ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                  p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = p + '://platform.twitter.com/widgets.js';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              }(document, 'script', 'twitter-wjs');
+            </script>
+            <iframe src="http://ghbtns.com/github-btn.html?user=dreamingechoes&amp;repo=meteor-markdown-editor&amp;type=watch&amp;count=true" scrolling="0" style="width:50px; height: 20px;" allowtransparency="true" frameborder="0" height="20" width="107"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=dreamingechoes&amp;repo=meteor-markdown-editor&amp;type=fork&amp;count=true" scrolling="0" style="width:50px; height: 20px;" allowtransparency="true" frameborder="0" height="20" width="107"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=dreamingechoes&amp;type=follow&amp;count=true" scrolling="0" style="width:195px; height: 20px;" allowtransparency="true" frameborder="0" height="20" width="195"></iframe>
+          </p>
+
+          <a class="footer-brand" href="http://dreamingecho.es" target="_blank">
+          </a>
+        </div>
+
+        <div class="col-xs-5">
+          <div class="footer-banner">
+            <div class="meteor-logo">
+              <img src="images/meteor.png" alt="Meteor" />
+            </div>
+            <h3 class="footer-title footer-logo">Made with
+              <span class="glyphicon glyphicon-heart"></span> and Meteor</h3>
+            For more cool stuff, visit: <a href="http://dreamingecho.es" target="_blank">dreamingecho.es</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<template name="markdown">
+  <div class="row markdown">
+    <div class="markdown-textarea col-md-6">
+      <textarea placeholder="Enter your content here..."></textarea>
+    </div>
+    <div class="markdown-panel col-md-6">
+      {{{instance.output.get}}}
+    </div>
+  </div>
+</template>
