@@ -8,6 +8,9 @@ About
 
 Bootstrap theme made by [designmodo.github.io](http://designmodo.github.io/Flat-UI/)
 
+![screenshot](/public/images/screenshot.png)
+Markdown example
+
 Original author
 ---------------
 
