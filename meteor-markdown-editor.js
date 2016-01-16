@@ -5,6 +5,7 @@ if (Meteor.isClient) {
     return Template.instance();
   });
 
+  /* Markdown template stuff */
   Template.markdown.onCreated(function() {
     var template = this;
 
@@ -23,5 +24,12 @@ if (Meteor.isClient) {
       var input = template.$(event.currentTarget).val();
       template.input.set(input);
     }
+  });
+
+  /* Navbar template stuff */
+  Template.navbar.onCreated(function() {
+  });
+
+  Template.navbar.events({
   });
 }

@@ -7,7 +7,6 @@
 
   <meta property="og:title" content="Meteor Markdown Editor" />
   <meta property="og:description" content="Meteor Markdown Online Editor made with Meteor by @dreamingechoes" />
-  <meta property="og:type" content="video.movie" />
   <meta property="og:url" content="http://dreamingecho.es/meteor-markdown-editor" />
   <meta property="og:image" content="images/meteor.png" />
 
@@ -18,42 +17,8 @@
 <body>
 
   <div class="container-full">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-embossed">
-      <div class="container-fluid">
 
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> <a class="navbar-brand" href="#">Meteor Markdown Editor</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              OPTIONS <b class="caret"></b>
-            </a>
-              <span class="dropdown-arrow"></span>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">
-                    <span class="glyphicon glyphicon-list-alt"></span> New Document</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="glyphicon glyphicon-floppy-save"></span> Save Document</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-
+    {{> navbar}}
     {{> markdown}}
 
   </div>
@@ -110,10 +75,27 @@
 
 </body>
 
+<template name="navbar">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-embossed">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> <a class="navbar-brand" href="#">Meteor Markdown Editor</a>
+      </div>
+
+    </div>
+  </nav>
+</template>
+
 <template name="markdown">
   <div class="row markdown">
     <div class="markdown-textarea col-md-6">
-      <textarea placeholder="Enter your content here..."></textarea>
+      <textarea id="content" placeholder="Enter your content here..."></textarea>
     </div>
     <div class="markdown-panel col-md-6">
       {{{instance.output.get}}}
